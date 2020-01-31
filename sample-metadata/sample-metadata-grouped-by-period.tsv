@@ -1,0 +1,257 @@
+sample-id	period	subject-id	project	activity	exclude	VO2max-change	RER-change	row-change	bench-press-change	3RM-squat-change
+#q2:types	categorical	categorical	categorical	categorical	categorical	categorical	categorical	categorical	categorical	categorical
+01cd-1	1	01cd	exmp1	baseline	no	-3.40	0.08			
+0966-1	1	0966	exmp1	baseline	no	6.45	0.01			
+1464-1	1	1464	exmp1	baseline	no	-2.54	0.06			
+2fa8-1	1	2fa8	exmp1	baseline	no	-3.30	-0.08			
+3543-1	1	3543	exmp1	baseline	no	2.31	0.09			
+4004-1	1	4004	exmp1	baseline	no	3.41	0.18			
+415f-1	1	415f	exmp1	baseline	no	3.55	0.36			
+4216-1	1	4216	exmp1	baseline	no	-1.52	-0.01			
+5840-1	1	5840	exmp1	baseline	no	0.62	0.02			
+5a38-1	1	5a38	exmp1	baseline	no	-2.71	-0.05			
+684e-1	1	684e	exmp1	baseline	no	4.20	-0.01			
+6a07-1	1	6a07	exmp1	baseline	no	-1.01	0.12			
+7313-1	1	7313	exmp1	baseline	no	-0.86	0.07			
+7aa9-1	1	7aa9	exmp1	baseline	no					
+82ea-1	1	82ea	exmp1	baseline	no	1.31	-0.03			
+8d46-1	1	8d46	exmp1	baseline	no	-3.18	0.04			
+8e99-1	1	8e99	exmp1	baseline	no	-1.63	0.12			
+9c72-1	1	9c72	exmp1	baseline	no	-5.14	0.21			
+ab06-1	1	ab06	exmp1	baseline	no					
+ac98-1	1	ac98	exmp1	baseline	no					
+b1fe-1	1	b1fe	exmp1	baseline	no					
+b8c2-1	1	b8c2	exmp1	baseline	no	-3.44	0.09			
+bf44-1	1	bf44	exmp1	baseline	no	2.14	0.11			
+c4cb-1	1	c4cb	exmp1	baseline	no	1.26	0.01			
+cde0-1	1	cde0	exmp1	baseline	no	2.11	0.44			
+d886-1	1	d886	exmp1	baseline	no	1.61	0.04			
+e327-1	1	e327	exmp1	baseline	no	1.91	0.10			
+e5db-1	1	e5db	exmp1	baseline	no	0.72	-0.02			
+e77e-1	1	e77e	exmp1	baseline	no	-3.93	-0.10			
+edc8-1	1	edc8	exmp1	baseline	no	-2.29	0.19			
+eee6-1	1	eee6	exmp1	baseline	no	1.62	-0.13			
+f34d-1	1	f34d	exmp1	baseline	no	2.43	-0.03			
+01cd-2	2	01cd	exmp1	intervention	no	-3.40	0.08			
+0966-2	2	0966	exmp1	intervention	no	6.45	0.01			
+1464-2	2	1464	exmp1	intervention	no	-2.54	0.06			
+2fa8-2	2	2fa8	exmp1	intervention	no	-3.30	-0.08			
+3543-2	2	3543	exmp1	intervention	no	2.31	0.09			
+4004-2	2	4004	exmp1	intervention	no	3.41	0.18			
+415f-2	2	415f	exmp1	intervention	no	3.55	0.36			
+4216-2	2	4216	exmp1	intervention	no	-1.52	-0.01			
+5840-2	2	5840	exmp1	intervention	no	0.62	0.02			
+5a38-2	2	5a38	exmp1	intervention	no	-2.71	-0.05			
+684e-2	2	684e	exmp1	intervention	no	4.20	-0.01			
+6a07-2	2	6a07	exmp1	intervention	no	-1.01	0.12			
+7313-2	2	7313	exmp1	intervention	no	-0.86	0.07			
+7aa9-2	2	7aa9	exmp1	intervention	no					
+82ea-2	2	82ea	exmp1	intervention	no	1.31	-0.03			
+8d46-2	2	8d46	exmp1	intervention	no	-3.18	0.04			
+8e99-2	2	8e99	exmp1	intervention	no	-1.63	0.12			
+9c72-2	2	9c72	exmp1	intervention	no	-5.14	0.21			
+ab06-2	2	ab06	exmp1	intervention	no					
+ac98-2	2	ac98	exmp1	intervention	no					
+b1fe-2	2	b1fe	exmp1	intervention	no					
+b8c2-2	2	b8c2	exmp1	intervention	no	-3.44	0.09			
+bf44-2	2	bf44	exmp1	intervention	no	2.14	0.11			
+c4cb-2	2	c4cb	exmp1	intervention	no	1.26	0.01			
+cde0-2	2	cde0	exmp1	intervention	no	2.11	0.44			
+d886-2	2	d886	exmp1	intervention	no	1.61	0.04			
+e327-2	2	e327	exmp1	intervention	no	1.91	0.10			
+e5db-2	2	e5db	exmp1	intervention	no	0.72	-0.02			
+e77e-2	2	e77e	exmp1	intervention	no	-3.93	-0.10			
+edc8-2	2	edc8	exmp1	intervention	no	-2.29	0.19			
+f34d-2	2	f34d	exmp1	intervention	no	2.43	-0.03			
+eee6-2	2	eee6	exmp1	intervention	no	1.62	-0.13			
+01cd-3	3	01cd	exmp1	intervention	no	-3.40	0.08			
+0966-3	3	0966	exmp1	intervention	no	6.45	0.01			
+1464-3	3	1464	exmp1	intervention	no	-2.54	0.06			
+2fa8-3	3	2fa8	exmp1	intervention	no	-3.30	-0.08			
+3543-3	3	3543	exmp1	intervention	no	2.31	0.09			
+4004-3	3	4004	exmp1	intervention	no	3.41	0.18			
+415f-3	3	415f	exmp1	intervention	no	3.55	0.36			
+4216-3	3	4216	exmp1	intervention	no	-1.52	-0.01			
+5840-3	3	5840	exmp1	intervention	no	0.62	0.02			
+684e-3	3	684e	exmp1	intervention	no	4.20	-0.01			
+6a07-3	3	6a07	exmp1	intervention	no	-1.01	0.12			
+7313-3	3	7313	exmp1	intervention	no	-0.86	0.07			
+7aa9-3	3	7aa9	exmp1	intervention	no					
+82ea-3	3	82ea	exmp1	intervention	no	1.31	-0.03			
+8d46-3	3	8d46	exmp1	intervention	no	-3.18	0.04			
+8e99-3	3	8e99	exmp1	intervention	no	-1.63	0.12			
+9c72-3	3	9c72	exmp1	intervention	no	-5.14	0.21			
+b8c2-3	3	b8c2	exmp1	intervention	no	-3.44	0.09			
+bf44-3	3	bf44	exmp1	intervention	no	2.14	0.11			
+cde0-3	3	cde0	exmp1	intervention	no	2.11	0.44			
+d886-3	3	d886	exmp1	intervention	no	1.61	0.04			
+e327-3	3	e327	exmp1	intervention	no	1.91	0.10			
+e5db-3	3	e5db	exmp1	intervention	no	0.72	-0.02			
+e77e-3	3	e77e	exmp1	intervention	no	-3.93	-0.10			
+edc8-3	3	edc8	exmp1	intervention	no	-2.29	0.19			
+eee6-3	3	eee6	exmp1	intervention	no	1.62	-0.13			
+f34d-3	3	f34d	exmp1	intervention	no	2.43	-0.03			
+c4cb-3	3	c4cb	exmp1	intervention	no	1.26	0.01			
+01cd-4	4	01cd	exmp1	intervention	no	-3.40	0.08			
+0966-4	4	0966	exmp1	intervention	no	6.45	0.01			
+1464-4	4	1464	exmp1	intervention	no	-2.54	0.06			
+2fa8-4	4	2fa8	exmp1	intervention	no	-3.30	-0.08			
+3543-4	4	3543	exmp1	intervention	no	2.31	0.09			
+4004-4	4	4004	exmp1	intervention	no	3.41	0.18			
+415f-4	4	415f	exmp1	intervention	no	3.55	0.36			
+4216-4	4	4216	exmp1	intervention	no	-1.52	-0.01			
+5840-4	4	5840	exmp1	intervention	no	0.62	0.02			
+684e-4	4	684e	exmp1	intervention	no	4.20	-0.01			
+6a07-4	4	6a07	exmp1	intervention	no	-1.01	0.12			
+7313-4	4	7313	exmp1	intervention	no	-0.86	0.07			
+82ea-4	4	82ea	exmp1	intervention	no	1.31	-0.03			
+8d46-4	4	8d46	exmp1	intervention	no	-3.18	0.04			
+8e99-4	4	8e99	exmp1	intervention	no	-1.63	0.12			
+b8c2-4	4	b8c2	exmp1	intervention	no	-3.44	0.09			
+bf44-4	4	bf44	exmp1	intervention	no	2.14	0.11			
+c4cb-4	4	c4cb	exmp1	intervention	no	1.26	0.01			
+cde0-4	4	cde0	exmp1	intervention	no	2.11	0.44			
+d886-4	4	d886	exmp1	intervention	no	1.61	0.04			
+e327-4	4	e327	exmp1	intervention	no	1.91	0.10			
+e5db-4	4	e5db	exmp1	intervention	no	0.72	-0.02			
+e77e-4	4	e77e	exmp1	intervention	no	-3.93	-0.10			
+edc8-4	4	edc8	exmp1	intervention	no	-2.29	0.19			
+eee6-4	4	eee6	exmp1	intervention	no	1.62	-0.13			
+f34d-4	4	f34d	exmp1	intervention	no	2.43	-0.03			
+9c72-4	4	9c72	exmp1	intervention	no	-5.14	0.21			
+01cd-5	5	01cd	exmp1	washout	no	-3.40	0.08			
+0966-5	5	0966	exmp1	washout	no	6.45	0.01			
+1464-5	5	1464	exmp1	washout	no	-2.54	0.06			
+2fa8-5	5	2fa8	exmp1	washout	no	-3.30	-0.08			
+3543-5	5	3543	exmp1	washout	no	2.31	0.09			
+4004-5	5	4004	exmp1	washout	no	3.41	0.18			
+415f-5	5	415f	exmp1	washout	no	3.55	0.36			
+4216-5	5	4216	exmp1	washout	no	-1.52	-0.01			
+5840-5	5	5840	exmp1	washout	no	0.62	0.02			
+684e-5	5	684e	exmp1	washout	no	4.20	-0.01			
+6a07-5	5	6a07	exmp1	washout	no	-1.01	0.12			
+7313-5	5	7313	exmp1	washout	no	-0.86	0.07			
+82ea-5	5	82ea	exmp1	washout	no	1.31	-0.03			
+8d46-5	5	8d46	exmp1	washout	no	-3.18	0.04			
+8e99-5	5	8e99	exmp1	washout	no	-1.63	0.12			
+9c72-5	5	9c72	exmp1	washout	no	-5.14	0.21			
+b8c2-5	5	b8c2	exmp1	washout	no	-3.44	0.09			
+bf44-5	5	bf44	exmp1	washout	no	2.14	0.11			
+c4cb-5	5	c4cb	exmp1	washout	no	1.26	0.01			
+cde0-5	5	cde0	exmp1	washout	no	2.11	0.44			
+d886-5	5	d886	exmp1	washout	no	1.61	0.04			
+e327-5	5	e327	exmp1	washout	no	1.91	0.10			
+e5db-5	5	e5db	exmp1	washout	no	0.72	-0.02			
+e77e-5	5	e77e	exmp1	washout	no	-3.93	-0.10			
+edc8-5	5	edc8	exmp1	washout	no	-2.29	0.19			
+eee6-5	5	eee6	exmp1	washout	no	1.62	-0.13			
+f34d-5	5	f34d	exmp1	washout	no	2.43	-0.03			
+nan-nan			exmp1		yes					
+007b6-1	1	007b6	exmp2	baseline	no			15.88	13.61	20.41
+137b2-1	1	137b2	exmp2	baseline	no			18.14	11.34	27.22
+3d3e6-1	1	3d3e6	exmp2	baseline	no			18.14	4.54	18.14
+46554-1	1	46554	exmp2	baseline	no			22.68	11.34	34.02
+5c55c-1	1	5c55c	exmp2	baseline	no			13.61	6.80	11.34
+70911-1	1	70911	exmp2	baseline	no			18.14	11.34	45.36
+843eb-1	1	843eb	exmp2	baseline	no			18.14	4.54	27.22
+96189-1	1	96189	exmp2	baseline	no			18.14	11.34	36.29
+9e46f-1	1	9e46f	exmp2	baseline	no			36.29	11.34	65.77
+b64fa-1	1	b64fa	exmp2	baseline	no			9.07	4.54	9.07
+b6643-1	1	b6643	exmp2	baseline	no			22.68	4.54	20.41
+b95d5-1	1	b95d5	exmp2	baseline	no			20.41	15.88	36.29
+dca0e-1	1	dca0e	exmp2	baseline	no			13.61	2.27	31.75
+de71c-1	1	de71c	exmp2	baseline	no			13.61	9.07	20.41
+e1127-1	1	e1127	exmp2	baseline	no			9.07	4.54	18.14
+e5b0a-1	1	e5b0a	exmp2	baseline	no			13.61	6.80	31.75
+f268a-1	1	f268a	exmp2	baseline	no			18.14	4.54	22.68
+fad9f-1	1	fad9f	exmp2	baseline	no			27.22	4.54	20.41
+0fc81-1	1	0fc81	exmp2	baseline	no			9.07	9.07	9.07
+113f1-1	1	113f1	exmp2	baseline	no			27.22	15.88	49.90
+3622f-1	1	3622f	exmp2	baseline	no			18.14	4.54	45.36
+a352a-1	1	a352a	exmp2	baseline	no			13.61	0.00	18.14
+e0818-1	1	e0818	exmp2	baseline	no			18.14	11.34	2.27
+f5092-1	1	f5092	exmp2	baseline	no			13.61	6.80	15.88
+81d70-1	1	81d70	exmp2	baseline	no			18.14	9.07	18.14
+3622f-2	2	3622f	exmp2	intervention	no			18.14	4.54	45.36
+f5092-2	2	f5092	exmp2	intervention	no			13.61	6.80	15.88
+007b6-2	2	007b6	exmp2	intervention	no			15.88	13.61	20.41
+0fc81-2	2	0fc81	exmp2	intervention	no			9.07	9.07	9.07
+113f1-2	2	113f1	exmp2	intervention	no			27.22	15.88	49.90
+137b2-2	2	137b2	exmp2	intervention	no			18.14	11.34	27.22
+3d3e6-2	2	3d3e6	exmp2	intervention	no			18.14	4.54	18.14
+46554-2	2	46554	exmp2	intervention	no			22.68	11.34	34.02
+5c55c-2	2	5c55c	exmp2	intervention	no			13.61	6.80	11.34
+70911-2	2	70911	exmp2	intervention	no			18.14	11.34	45.36
+843eb-2	2	843eb	exmp2	intervention	no			18.14	4.54	27.22
+96189-2	2	96189	exmp2	intervention	no			18.14	11.34	36.29
+9e46f-2	2	9e46f	exmp2	intervention	no			36.29	11.34	65.77
+a352a-2	2	a352a	exmp2	intervention	no			13.61	0.00	18.14
+b64fa-2	2	b64fa	exmp2	intervention	no			9.07	4.54	9.07
+b6643-2	2	b6643	exmp2	intervention	no			22.68	4.54	20.41
+b95d5-2	2	b95d5	exmp2	intervention	no			20.41	15.88	36.29
+dca0e-2	2	dca0e	exmp2	intervention	no			13.61	2.27	31.75
+de71c-2	2	de71c	exmp2	intervention	no			13.61	9.07	20.41
+e0818-2	2	e0818	exmp2	intervention	no			18.14	11.34	2.27
+e1127-2	2	e1127	exmp2	intervention	no			9.07	4.54	18.14
+e5b0a-2	2	e5b0a	exmp2	intervention	no			13.61	6.80	31.75
+fad9f-2	2	fad9f	exmp2	intervention	no			27.22	4.54	20.41
+81d70-2	2	81d70	exmp2	intervention	no			18.14	9.07	18.14
+3622f-3	3	3622f	exmp2	intervention	no			18.14	4.54	45.36
+843eb-3	3	843eb	exmp2	intervention	no			18.14	4.54	27.22
+b95d5-3	3	b95d5	exmp2	intervention	no			20.41	15.88	36.29
+e0818-3	3	e0818	exmp2	intervention	no			18.14	11.34	2.27
+e5b0a-3	3	e5b0a	exmp2	intervention	no			13.61	6.80	31.75
+f268a-3	3	f268a	exmp2	intervention	no			18.14	4.54	22.68
+f5092-3	3	f5092	exmp2	intervention	no			13.61	6.80	15.88
+007b6-3	3	007b6	exmp2	intervention	no			15.88	13.61	20.41
+113f1-3	3	113f1	exmp2	intervention	no			27.22	15.88	49.90
+137b2-3	3	137b2	exmp2	intervention	no			18.14	11.34	27.22
+96189-3	3	96189	exmp2	intervention	no			18.14	11.34	36.29
+9e46f-3	3	9e46f	exmp2	intervention	no			36.29	11.34	65.77
+fad9f-3	3	fad9f	exmp2	intervention	no			27.22	4.54	20.41
+3d3e6-4	4	3d3e6	exmp2	intervention	no			18.14	4.54	18.14
+5c55c-4	4	5c55c	exmp2	intervention	no			13.61	6.80	11.34
+81d70-4	4	81d70	exmp2	intervention	no			18.14	9.07	18.14
+b64fa-4	4	b64fa	exmp2	intervention	no			9.07	4.54	9.07
+b6643-4	4	b6643	exmp2	intervention	no			22.68	4.54	20.41
+b95d5-4	4	b95d5	exmp2	intervention	no			20.41	15.88	36.29
+dca0e-4	4	dca0e	exmp2	intervention	no			13.61	2.27	31.75
+e0818-4	4	e0818	exmp2	intervention	no			18.14	11.34	2.27
+e1127-4	4	e1127	exmp2	intervention	no			9.07	4.54	18.14
+f268a-4	4	f268a	exmp2	intervention	no			18.14	4.54	22.68
+007b6-4	4	007b6	exmp2	intervention	no			15.88	13.61	20.41
+3622f-4	4	3622f	exmp2	intervention	no			18.14	4.54	45.36
+46554-4	4	46554	exmp2	intervention	no			22.68	11.34	34.02
+843eb-4	4	843eb	exmp2	intervention	no			18.14	4.54	27.22
+96189-4	4	96189	exmp2	intervention	no			18.14	11.34	36.29
+9e46f-4	4	9e46f	exmp2	intervention	no			36.29	11.34	65.77
+a352a-4	4	a352a	exmp2	intervention	no			13.61	0.00	18.14
+de71c-4	4	de71c	exmp2	intervention	no			13.61	9.07	20.41
+f5092-4	4	f5092	exmp2	intervention	no			13.61	6.80	15.88
+137b2-4	4	137b2	exmp2	intervention	no			18.14	11.34	27.22
+e5b0a-4	4	e5b0a	exmp2	intervention	no			13.61	6.80	31.75
+007b6-5	5	007b6	exmp2	washout	no			15.88	13.61	20.41
+0fc81-5	5	0fc81	exmp2	washout	no			9.07	9.07	9.07
+137b2-5	5	137b2	exmp2	washout	no			18.14	11.34	27.22
+3622f-5	5	3622f	exmp2	washout	no			18.14	4.54	45.36
+3d3e6-5	5	3d3e6	exmp2	washout	no			18.14	4.54	18.14
+46554-5	5	46554	exmp2	washout	no			22.68	11.34	34.02
+5c55c-5	5	5c55c	exmp2	washout	no			13.61	6.80	11.34
+70911-5	5	70911	exmp2	washout	no			18.14	11.34	45.36
+81d70-5	5	81d70	exmp2	washout	no			18.14	9.07	18.14
+843eb-5	5	843eb	exmp2	washout	no			18.14	4.54	27.22
+96189-5	5	96189	exmp2	washout	no			18.14	11.34	36.29
+9e46f-5	5	9e46f	exmp2	washout	no			36.29	11.34	65.77
+a352a-5	5	a352a	exmp2	washout	no			13.61	0.00	18.14
+b64fa-5	5	b64fa	exmp2	washout	no			9.07	4.54	9.07
+b6643-5	5	b6643	exmp2	washout	no			22.68	4.54	20.41
+dca0e-5	5	dca0e	exmp2	washout	no			13.61	2.27	31.75
+de71c-5	5	de71c	exmp2	washout	no			13.61	9.07	20.41
+e1127-5	5	e1127	exmp2	washout	no			9.07	4.54	18.14
+e5b0a-5	5	e5b0a	exmp2	washout	no			13.61	6.80	31.75
+fad9f-5	5	fad9f	exmp2	washout	no			27.22	4.54	20.41
+113f1-5	5	113f1	exmp2	washout	no			27.22	15.88	49.90
+e0818-5	5	e0818	exmp2	washout	no			18.14	11.34	2.27
+f5092-5	5	f5092	exmp2	washout	no			13.61	6.80	15.88
+f268a-nan		f268a	exmp2		yes			18.14	4.54	22.68
+fad9f-nan		fad9f	exmp2		yes			27.22	4.54	20.41
