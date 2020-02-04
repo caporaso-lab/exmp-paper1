@@ -1,0 +1,34 @@
+                                 OLS Regression Results                                
+=======================================================================================
+Dep. Variable:     bench_press_change   R-squared (uncentered):                   0.841
+Model:                            OLS   Adj. R-squared (uncentered):              0.751
+Method:                 Least Squares   F-statistic:                              9.397
+Date:                Tue, 04 Feb 2020   Prob (F-statistic):                    7.03e-05
+Time:                        09:23:15   Log-Likelihood:                         -67.374
+No. Observations:                  25   AIC:                                      152.7
+Df Residuals:                      16   BIC:                                      163.7
+Df Model:                           9                                                  
+Covariance Type:            nonrobust                                                  
+==========================================================================================
+                             coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------
+faith_pd                   1.9281      0.942      2.046      0.058      -0.069       3.926
+shannon                  -13.2249     10.182     -1.299      0.212     -34.811       8.361
+pielou_e                  60.0223     78.644      0.763      0.456    -106.695     226.739
+Weighted_UniFrac_PC1      12.6855      7.853      1.615      0.126      -3.961      29.332
+Weighted_UniFrac_PC2     -10.6187      8.749     -1.214      0.242     -29.165       7.927
+Weighted_UniFrac_PC3       0.2357     10.225      0.023      0.982     -21.439      21.911
+Unweighted_UniFrac_PC1    22.2946     27.561      0.809      0.430     -36.133      80.722
+Unweighted_UniFrac_PC2   -16.8600     14.401     -1.171      0.259     -47.390      13.670
+Unweighted_UniFrac_PC3    11.2116     11.817      0.949      0.357     -13.839      36.262
+==============================================================================
+Omnibus:                        1.298   Durbin-Watson:                   2.523
+Prob(Omnibus):                  0.523   Jarque-Bera (JB):                0.901
+Skew:                           0.074   Prob(JB):                        0.637
+Kurtosis:                       2.082   Cond. No.                     1.70e+03
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.7e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

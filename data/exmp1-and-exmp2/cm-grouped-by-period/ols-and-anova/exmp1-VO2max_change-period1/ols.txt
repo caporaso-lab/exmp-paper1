@@ -1,0 +1,32 @@
+                                 OLS Regression Results                                
+=======================================================================================
+Dep. Variable:          VO2max_change   R-squared (uncentered):                   0.541
+Model:                            OLS   Adj. R-squared (uncentered):              0.323
+Method:                 Least Squares   F-statistic:                              2.485
+Date:                Tue, 04 Feb 2020   Prob (F-statistic):                      0.0454
+Time:                        09:22:47   Log-Likelihood:                         -58.251
+No. Observations:                  28   AIC:                                      134.5
+Df Residuals:                      19   BIC:                                      146.5
+Df Model:                           9                                                  
+Covariance Type:            nonrobust                                                  
+==========================================================================================
+                             coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------
+faith_pd                  -1.9247      0.511     -3.763      0.001      -2.995      -0.854
+shannon                    6.7171      5.212      1.289      0.213      -4.192      17.627
+pielou_e                 -10.8920     30.367     -0.359      0.724     -74.452      52.667
+Weighted_UniFrac_PC1       4.0118      1.820      2.204      0.040       0.203       7.821
+Weighted_UniFrac_PC2     -20.9527      5.617     -3.730      0.001     -32.709      -9.196
+Weighted_UniFrac_PC3      -7.0929      4.153     -1.708      0.104     -15.786       1.600
+Unweighted_UniFrac_PC1    18.6513      8.355      2.232      0.038       1.165      36.138
+Unweighted_UniFrac_PC2    -4.2767      4.596     -0.931      0.364     -13.896       5.343
+Unweighted_UniFrac_PC3     9.0206      5.993      1.505      0.149      -3.522      21.563
+==============================================================================
+Omnibus:                        1.440   Durbin-Watson:                   1.630
+Prob(Omnibus):                  0.487   Jarque-Bera (JB):                1.340
+Skew:                          -0.462   Prob(JB):                        0.512
+Kurtosis:                       2.458   Cond. No.                         837.
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
