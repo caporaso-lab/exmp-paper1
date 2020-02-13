@@ -1,0 +1,35 @@
+                                OLS Regression Results                                
+======================================================================================
+Dep. Variable:     three_rep_max_squat_change   R-squared:                       0.756
+Model:                                    OLS   Adj. R-squared:                  0.482
+Method:                         Least Squares   F-statistic:                     2.758
+Date:                        Wed, 12 Feb 2020   Prob (F-statistic):             0.0840
+Time:                                17:15:12   Log-Likelihood:                -58.807
+No. Observations:                          18   AIC:                             137.6
+Df Residuals:                               8   BIC:                             146.5
+Df Model:                                   9                                         
+Covariance Type:                    nonrobust                                         
+==========================================================================================
+                             coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------
+const                    100.9009     42.374      2.381      0.044       3.187     198.615
+faith_pd                   2.5023      3.004      0.833      0.429      -4.426       9.430
+shannon                   42.2760     52.571      0.804      0.445     -78.952     163.504
+pielou_e                -463.7132    389.917     -1.189      0.268   -1362.864     435.438
+Weighted_UniFrac_PC1     -22.0852     25.695     -0.860      0.415     -81.338      37.168
+Weighted_UniFrac_PC2      70.6021     28.981      2.436      0.041       3.772     137.432
+Weighted_UniFrac_PC3    -123.4554     34.387     -3.590      0.007    -202.752     -44.159
+Unweighted_UniFrac_PC1   -40.3732     87.443     -0.462      0.657    -242.018     161.271
+Unweighted_UniFrac_PC2   225.8853     94.745      2.384      0.044       7.402     444.369
+Unweighted_UniFrac_PC3   123.0168     51.215      2.402      0.043       4.915     241.119
+==============================================================================
+Omnibus:                        0.649   Durbin-Watson:                   1.331
+Prob(Omnibus):                  0.723   Jarque-Bera (JB):                0.021
+Skew:                           0.039   Prob(JB):                        0.990
+Kurtosis:                       3.147   Cond. No.                     2.95e+03
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.95e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
