@@ -106,7 +106,7 @@ def get_sig_text(p, alphas, null_text=""):
     sorted_location = bisect.bisect([e[0] for e in alphas], p)
     return alphas[sorted_location][1]
 
-def plot_week_data(df, metric, time_column, label_axes=True):
+def plot_week_data(df, metric, time_column, label_axes=True, output_figure_filepath=None):
     df[time_column] = pd.to_numeric(df[time_column], errors='coerce')
     df[metric] = pd.to_numeric(df[metric], errors='coerce')
 
@@ -122,7 +122,11 @@ def plot_week_data(df, metric, time_column, label_axes=True):
     if not label_axes:
         ax.set_xlabel('')
         ax.set_ylabel('')
-    return fig
+
+    if output_figure_filepath is not None:
+        fig.savefig(output_figure_filepath, dpi = (300))
+    else:
+        return fig
 
 # Change in distance to donor from time zero is different than zero
 # (positive t means more different than donor, negative t means more similar to donor)
