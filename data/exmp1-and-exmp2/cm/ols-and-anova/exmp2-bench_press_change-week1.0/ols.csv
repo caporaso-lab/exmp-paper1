@@ -1,0 +1,30 @@
+                       OLS Regression Results                      
+Dep. Variable:   ,bench_press_change,  R-squared:         ,   0.378
+Model:           ,OLS               ,  Adj. R-squared:    ,  -0.322
+Method:          ,Least Squares     ,  F-statistic:       ,  0.5399
+Date:            ,Thu, 20 Feb 2020  ,  Prob (F-statistic):, 0.811  
+Time:            ,08:42:45          ,  Log-Likelihood:    , -45.631
+No. Observations:,    18            ,  AIC:               ,   111.3
+Df Residuals:    ,     8            ,  BIC:               ,   120.2
+Df Model:        ,     9            ,                     ,        
+Covariance Type: ,nonrobust         ,                     ,        
+                      ,   coef   , std err ,    t    ,P>|t| ,  [0.025 ,  0.975] 
+const                 ,   31.3173,   20.379,    1.537, 0.163,  -15.678,   78.312
+faith_pd              ,   -0.0705,    1.445,   -0.049, 0.962,   -3.403,    3.262
+shannon               ,    9.1000,   25.284,    0.360, 0.728,  -49.204,   67.404
+pielou_e              ,  -98.0426,  187.529,   -0.523, 0.615, -530.485,  334.400
+Weighted_UniFrac_PC1  ,    5.2483,   12.358,    0.425, 0.682,  -23.249,   33.746
+Weighted_UniFrac_PC2  ,  -10.1686,   13.938,   -0.730, 0.486,  -42.310,   21.973
+Weighted_UniFrac_PC3  ,   11.6420,   16.538,    0.704, 0.501,  -26.495,   49.779
+Unweighted_UniFrac_PC1,    2.7563,   42.055,    0.066, 0.949,  -94.224,   99.736
+Unweighted_UniFrac_PC2,   15.0803,   45.567,    0.331, 0.749,  -89.998,  120.159
+Unweighted_UniFrac_PC3,    8.2804,   24.632,    0.336, 0.745,  -48.520,   65.081
+Omnibus:      , 2.947,  Durbin-Watson:     ,   1.626
+Prob(Omnibus):, 0.229,  Jarque-Bera (JB):  ,   1.627
+Skew:         , 0.733,  Prob(JB):          ,   0.443
+Kurtosis:     , 3.150,  Cond. No.          ,2.95e+03
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.95e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

@@ -1,0 +1,30 @@
+                      OLS Regression Results                     
+Dep. Variable:   ,RER_change      ,  R-squared:         ,   0.341
+Model:           ,OLS             ,  Adj. R-squared:    ,  -0.008
+Method:          ,Least Squares   ,  F-statistic:       ,  0.9769
+Date:            ,Thu, 05 Mar 2020,  Prob (F-statistic):, 0.492  
+Time:            ,14:48:52        ,  Log-Likelihood:    ,  23.542
+No. Observations:,    27          ,  AIC:               ,  -27.08
+Df Residuals:    ,    17          ,  BIC:               ,  -14.13
+Df Model:        ,     9          ,                     ,        
+Covariance Type: ,nonrobust       ,                     ,        
+                      ,   coef   , std err ,    t    ,P>|t| ,  [0.025 ,  0.975] 
+const                 ,    0.8274,    0.634,    1.305, 0.209,   -0.511,    2.165
+faith_pd              ,   -0.0560,    0.054,   -1.046, 0.310,   -0.169,    0.057
+shannon               ,   -0.3682,    0.336,   -1.095, 0.289,   -1.077,    0.341
+pielou_e              ,    2.1464,    2.124,    1.011, 0.326,   -2.334,    6.627
+Weighted_UniFrac_PC1  ,   -0.0086,    0.159,   -0.054, 0.958,   -0.345,    0.327
+Weighted_UniFrac_PC2  ,    0.1562,    0.214,    0.729, 0.476,   -0.296,    0.608
+Weighted_UniFrac_PC3  ,   -0.3950,    0.372,   -1.063, 0.303,   -1.179,    0.389
+Unweighted_UniFrac_PC1,    1.2241,    0.625,    1.958, 0.067,   -0.095,    2.543
+Unweighted_UniFrac_PC2,    0.2660,    0.255,    1.042, 0.312,   -0.272,    0.804
+Unweighted_UniFrac_PC3,    0.5374,    0.424,    1.268, 0.222,   -0.357,    1.432
+Omnibus:      , 2.572,  Durbin-Watson:     ,   2.226
+Prob(Omnibus):, 0.276,  Jarque-Bera (JB):  ,   1.639
+Skew:         , 0.601,  Prob(JB):          ,   0.441
+Kurtosis:     , 3.120,  Cond. No.          ,1.06e+03
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.06e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

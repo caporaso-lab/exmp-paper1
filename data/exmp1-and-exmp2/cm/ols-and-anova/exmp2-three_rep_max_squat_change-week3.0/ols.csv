@@ -1,0 +1,30 @@
+                           OLS Regression Results                          
+Dep. Variable:   ,three_rep_max_squat_change,  R-squared:         ,   0.477
+Model:           ,OLS                       ,  Adj. R-squared:    ,  -0.464
+Method:          ,Least Squares             ,  F-statistic:       ,  0.5071
+Date:            ,Thu, 20 Feb 2020          ,  Prob (F-statistic):, 0.823  
+Time:            ,08:44:34                  ,  Log-Likelihood:    , -57.276
+No. Observations:,    15                    ,  AIC:               ,   134.6
+Df Residuals:    ,     5                    ,  BIC:               ,   141.6
+Df Model:        ,     9                    ,                     ,        
+Covariance Type: ,nonrobust                 ,                     ,        
+                      ,   coef   , std err ,    t    ,P>|t| ,  [0.025 ,  0.975] 
+const                 , -100.4513,  206.829,   -0.486, 0.648, -632.123,  431.220
+faith_pd              ,    1.0792,    8.835,    0.122, 0.908,  -21.631,   23.789
+shannon               ,  -78.8362,  167.446,   -0.471, 0.658, -509.269,  351.597
+pielou_e              ,  727.5703, 1291.938,    0.563, 0.598,-2593.463, 4048.603
+Weighted_UniFrac_PC1  ,   24.3861,   66.889,    0.365, 0.730, -147.556,  196.329
+Weighted_UniFrac_PC2  ,  -47.2028,   63.828,   -0.740, 0.493, -211.277,  116.872
+Weighted_UniFrac_PC3  ,  -11.2606,   74.403,   -0.151, 0.886, -202.520,  179.999
+Unweighted_UniFrac_PC1,  -82.0851,   89.782,   -0.914, 0.403, -312.878,  148.707
+Unweighted_UniFrac_PC2,  -44.1403,   75.805,   -0.582, 0.586, -239.004,  150.723
+Unweighted_UniFrac_PC3,   18.9570,  134.998,    0.140, 0.894, -328.066,  365.980
+Omnibus:      , 0.048,  Durbin-Watson:     ,   2.446
+Prob(Omnibus):, 0.976,  Jarque-Bera (JB):  ,   0.273
+Skew:         , 0.045,  Prob(JB):          ,   0.872
+Kurtosis:     , 2.345,  Cond. No.          ,4.34e+03
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 4.34e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

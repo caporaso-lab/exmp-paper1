@@ -1,0 +1,30 @@
+                      OLS Regression Results                     
+Dep. Variable:   ,VO2max_change   ,  R-squared:         ,   0.415
+Model:           ,OLS             ,  Adj. R-squared:    ,   0.105
+Method:          ,Least Squares   ,  F-statistic:       ,   1.338
+Date:            ,Thu, 05 Mar 2020,  Prob (F-statistic):, 0.289  
+Time:            ,14:48:40        ,  Log-Likelihood:    , -59.466
+No. Observations:,    27          ,  AIC:               ,   138.9
+Df Residuals:    ,    17          ,  BIC:               ,   151.9
+Df Model:        ,     9          ,                     ,        
+Covariance Type: ,nonrobust       ,                     ,        
+                      ,   coef   , std err ,    t    ,P>|t| ,  [0.025 ,  0.975] 
+const                 ,   -0.2201,   13.721,   -0.016, 0.987,  -29.170,   28.730
+faith_pd              ,   -0.6052,    1.159,   -0.522, 0.608,   -3.050,    1.839
+shannon               ,   -1.3698,    7.273,   -0.188, 0.853,  -16.715,   13.976
+pielou_e              ,   18.6953,   45.946,    0.407, 0.689,  -78.241,  115.632
+Weighted_UniFrac_PC1  ,   -2.8479,    3.445,   -0.827, 0.420,  -10.117,    4.421
+Weighted_UniFrac_PC2  ,   -2.8219,    4.637,   -0.609, 0.551,  -12.604,    6.961
+Weighted_UniFrac_PC3  ,   -0.3831,    8.038,   -0.048, 0.963,  -17.342,   16.576
+Unweighted_UniFrac_PC1,   16.3763,   13.527,    1.211, 0.243,  -12.163,   44.916
+Unweighted_UniFrac_PC2,    0.0860,    5.522,    0.016, 0.988,  -11.564,   11.736
+Unweighted_UniFrac_PC3,   14.3662,    9.173,    1.566, 0.136,   -4.986,   33.719
+Omnibus:      , 1.216,  Durbin-Watson:     ,   1.921
+Prob(Omnibus):, 0.544,  Jarque-Bera (JB):  ,   0.985
+Skew:         , 0.220,  Prob(JB):          ,   0.611
+Kurtosis:     , 2.175,  Cond. No.          ,1.06e+03
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.06e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

@@ -1,7 +1,10 @@
 import os.path
+from pathlib import Path
 import numpy as np
 
 import qiime2
+from qiime2.plugins.diversity.methods import pcoa as pcoa_method, filter_distance_matrix
+from qiime2.plugins.longitudinal.visualizers import anova
 
 import seaborn as sns
 import scipy.stats
@@ -12,8 +15,11 @@ import matplotlib.pyplot as plt
 
 from skbio.stats.distance import MissingIDError
 from statsmodels.stats.multitest import multipletests
+import statsmodels.api as sm
 
 import matplotlib
+
+
 
 base_dir = ".."
 data_dir = os.path.join(base_dir, 'data', 'exmp1-and-exmp2')
@@ -21,6 +27,7 @@ metadata_dir = os.path.join(base_dir, "sample-metadata")
 
 sample_md_fp = os.path.join(metadata_dir, "sample-metadata.tsv")
 table_fp = os.path.join(data_dir, "table.qza")
+taxonomy_fp = os.path.join(data_dir, "taxonomy-gtdb.qza")
 phylogeny_fp = os.path.join(data_dir, "rooted-tree.qza")
 cm_path = os.path.join(data_dir, 'cm')
 
@@ -69,6 +76,9 @@ def load_sample_metadata_grouped_by_period():
 
 def load_phylogeny():
     return qiime2.Artifact.load(phylogeny_fp)
+
+def load_taxonomy():
+    return qiime2.Artifact.load(taxonomy_fp)
 
 def week_to_period(week):
     week = float(week)
@@ -163,3 +173,75 @@ def plot_week_data_with_stats(sample_md, metric, time_column, hue=None, alphas=a
         fig.savefig(output_figure_filepath, dpi = (300))
     else:
         return fig
+
+def ols_and_anova(dep_variable, project, time_value, base_output_dir, time_column,
+                  sample_metadata, uu_dm, wu_dm, faith_pd, shannon, evenness):
+    indep_variables = ['faith_pd', 'shannon', 'pielou_e',
+                       'Weighted_UniFrac_PC1', 'Weighted_UniFrac_PC2', 'Weighted_UniFrac_PC3',
+                       'Unweighted_UniFrac_PC1', 'Unweighted_UniFrac_PC2', 'Unweighted_UniFrac_PC3']
+    output_dir = os.path.join(base_output_dir, '%s-%s-%s%s' % (project, dep_variable, time_column, str(time_value)))
+    Path(output_dir).mkdir(parents=True, exist_ok=True)
+
+    where = "[project]='%s' and [%s]='%s'" % (project, time_column, str(time_value))
+
+    ids_to_keep = sample_metadata.get_ids(where=where)
+    sample_metadata = sample_metadata.filter_ids(ids_to_keep=ids_to_keep)
+
+    # make column names compatible for R-like forumulas used in anova
+    _df = sample_metadata.to_dataframe()
+    _df.index.name = 'sample-id'
+    _df = _df.rename(columns={'VO2max-change': 'VO2max_change',
+                              'RER-change': 'RER_change',
+                              'row-change': 'row_change',
+                              'bench-press-change': 'bench_press_change',
+                              '3RM-squat-change': 'three_rep_max_squat_change'})
+
+    # drop columns that don't have necessary data
+    if project == 'exmp1':
+        _df = _df[['VO2max_change', 'RER_change']].dropna().astype(np.float)
+    elif project == 'exmp2':
+        _df = _df[['row_change', 'bench_press_change', 'three_rep_max_squat_change']].dropna().astype(np.float)
+    else:
+        raise ValueError("Project must be exmp1 or exmp2, but %s was provided." % project)
+    sample_metadata = qiime2.Metadata(_df)
+
+    uu_dm = filter_distance_matrix(uu_dm, metadata=sample_metadata).filtered_distance_matrix
+    wu_dm = filter_distance_matrix(wu_dm, metadata=sample_metadata).filtered_distance_matrix
+
+    wu_pcoa = pcoa_method(wu_dm).pcoa
+    wu_pcoa = wu_pcoa.view(qiime2.Metadata).to_dataframe()[['Axis 1', 'Axis 2', 'Axis 3']]
+    wu_pcoa = wu_pcoa.rename(columns={'Axis 1': 'Weighted_UniFrac_PC1',
+                                      'Axis 2': 'Weighted_UniFrac_PC2',
+                                      'Axis 3': 'Weighted_UniFrac_PC3'})
+    sample_metadata = sample_metadata.merge(qiime2.Metadata(wu_pcoa))
+
+    uu_pcoa = pcoa_method(uu_dm).pcoa
+    uu_pcoa = uu_pcoa.view(qiime2.Metadata).to_dataframe()[['Axis 1', 'Axis 2', 'Axis 3']]
+    uu_pcoa = uu_pcoa.rename(columns={'Axis 1': 'Unweighted_UniFrac_PC1',
+                                      'Axis 2': 'Unweighted_UniFrac_PC2',
+                                      'Axis 3': 'Unweighted_UniFrac_PC3'})
+    sample_metadata = sample_metadata.merge(qiime2.Metadata(uu_pcoa))
+
+    sample_metadata = sample_metadata.merge(faith_pd.view(qiime2.Metadata))
+    sample_metadata = sample_metadata.merge(shannon.view(qiime2.Metadata))
+    sample_metadata = sample_metadata.merge(evenness.view(qiime2.Metadata))
+
+
+    df = sample_metadata.to_dataframe()
+    df = sm.add_constant(df)
+
+    dep_variable_histogram = df[dep_variable].hist().figure
+    dep_variable_histogram.savefig(os.path.join(output_dir, 'histogram.pdf'))
+
+    mod = sm.OLS(df[dep_variable], df[['const'] + indep_variables])
+    res = mod.fit()
+    ols_result_summary = res.summary()
+    with open(os.path.join(output_dir, 'ols.csv'), 'w') as fh:
+        fh.write(ols_result_summary.as_csv())
+
+    formula = "%s ~ %s" % (dep_variable, ' + '.join(indep_variables))
+    anova_visualization = anova(metadata=qiime2.Metadata(df), formula=formula).visualization
+    anova_visualization.save(os.path.join(output_dir, 'anova.qzv'))
+
+    return (dep_variable_histogram, ols_result_summary, anova_visualization,
+            sample_metadata)
