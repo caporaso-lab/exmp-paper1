@@ -1,30 +1,32 @@
                       OLS Regression Results                     
-Dep. Variable:   ,VO2max_change   ,  R-squared:         ,   0.588
-Model:           ,OLS             ,  Adj. R-squared:    ,   0.383
-Method:          ,Least Squares   ,  F-statistic:       ,   2.859
-Date:            ,Thu, 05 Mar 2020,  Prob (F-statistic):,0.0276  
-Time:            ,14:53:27        ,  Log-Likelihood:    , -56.713
-No. Observations:,    28          ,  AIC:               ,   133.4
-Df Residuals:    ,    18          ,  BIC:               ,   146.7
-Df Model:        ,     9          ,                     ,        
+Dep. Variable:   ,VO2max_change   ,  R-squared:         ,   0.632
+Model:           ,OLS             ,  Adj. R-squared:    ,   0.380
+Method:          ,Least Squares   ,  F-statistic:       ,   2.502
+Date:            ,Thu, 23 Apr 2020,  Prob (F-statistic):,0.0467  
+Time:            ,09:18:42        ,  Log-Likelihood:    , -55.133
+No. Observations:,    28          ,  AIC:               ,   134.3
+Df Residuals:    ,    16          ,  BIC:               ,   150.3
+Df Model:        ,    11          ,                     ,        
 Covariance Type: ,nonrobust       ,                     ,        
                       ,   coef   , std err ,    t    ,P>|t| ,  [0.025 ,  0.975] 
-const                 ,  -13.2278,    9.150,   -1.446, 0.165,  -32.452,    5.996
-faith_pd              ,   -0.7473,    0.954,   -0.783, 0.444,   -2.752,    1.258
-shannon               ,    0.6414,    6.585,    0.097, 0.923,  -13.193,   14.475
-pielou_e              ,   29.0094,   40.423,    0.718, 0.482,  -55.915,  113.934
-Weighted_UniFrac_PC1  ,    2.8607,    1.941,    1.474, 0.158,   -1.217,    6.938
-Weighted_UniFrac_PC2  ,   21.5810,    5.480,    3.938, 0.001,   10.069,   33.093
-Weighted_UniFrac_PC3  ,    6.9183,    4.041,    1.712, 0.104,   -1.571,   15.408
-Unweighted_UniFrac_PC1,   -7.3160,   11.291,   -0.648, 0.525,  -31.038,   16.407
-Unweighted_UniFrac_PC2,   -3.2027,    4.531,   -0.707, 0.489,  -12.722,    6.316
-Unweighted_UniFrac_PC3,   -7.6225,    5.907,   -1.290, 0.213,  -20.034,    4.789
-Omnibus:      , 1.251,  Durbin-Watson:     ,   2.060
-Prob(Omnibus):, 0.535,  Jarque-Bera (JB):  ,   1.189
-Skew:         ,-0.428,  Prob(JB):          ,   0.552
-Kurtosis:     , 2.464,  Cond. No.          ,1.13e+03
+const                 ,  -24.5993,   12.448,   -1.976, 0.066,  -50.988,    1.789
+faith_pd              ,   -0.3303,    1.019,   -0.324, 0.750,   -2.491,    1.831
+shannon               ,   -1.8104,    6.985,   -0.259, 0.799,  -16.617,   12.996
+pielou_e              ,   43.6041,   42.903,    1.016, 0.325,  -47.346,  134.554
+Weighted_UniFrac_PC1  ,   -3.2983,    2.003,   -1.647, 0.119,   -7.544,    0.948
+Weighted_UniFrac_PC2  ,   23.0421,    5.597,    4.117, 0.001,   11.178,   34.906
+Weighted_UniFrac_PC3  ,   -5.4024,    4.343,   -1.244, 0.231,  -14.609,    3.805
+Unweighted_UniFrac_PC1,   -3.3204,   12.548,   -0.265, 0.795,  -29.921,   23.281
+Unweighted_UniFrac_PC2,    5.0995,    5.796,    0.880, 0.392,   -7.187,   17.386
+Unweighted_UniFrac_PC3,   10.0681,    6.302,    1.598, 0.130,   -3.291,   23.428
+Gender                ,   -1.0468,    1.314,   -0.797, 0.437,   -3.832,    1.739
+Age                   ,    0.4100,    0.327,    1.252, 0.228,   -0.284,    1.104
+Omnibus:      , 1.827,  Durbin-Watson:     ,   2.112
+Prob(Omnibus):, 0.401,  Jarque-Bera (JB):  ,   1.650
+Skew:         ,-0.532,  Prob(JB):          ,   0.438
+Kurtosis:     , 2.470,  Cond. No.          ,2.43e+03
 
 Warnings:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The condition number is large, 1.13e+03. This might indicate that there are
+[2] The condition number is large, 2.43e+03. This might indicate that there are
 strong multicollinearity or other numerical problems.

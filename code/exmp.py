@@ -1,24 +1,20 @@
+import bisect
 import os.path
 from pathlib import Path
-import numpy as np
-
-import qiime2
-from qiime2.plugins.diversity.methods import pcoa as pcoa_method, filter_distance_matrix
-from qiime2.plugins.longitudinal.visualizers import anova
-
-import seaborn as sns
-import scipy.stats
-import bisect
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-
-from skbio.stats.distance import MissingIDError
-from statsmodels.stats.multitest import multipletests
-import statsmodels.api as sm
 
 import matplotlib
-
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import qiime2
+import scipy.stats
+import seaborn as sns
+import statsmodels.api as sm
+from qiime2.plugins.diversity.methods import filter_distance_matrix
+from qiime2.plugins.diversity.methods import pcoa as pcoa_method
+from qiime2.plugins.longitudinal.visualizers import anova
+from skbio.stats.distance import MissingIDError
+from statsmodels.stats.multitest import multipletests
 
 
 base_dir = ".."
@@ -57,7 +53,7 @@ def load_sample_metadata_grouping():
     grouped_sample_metadata = sample_metadata[
         ['period', 'subject-id', 'project', 'activity', 'exclude',
          'VO2max-change', 'RER-change', 'row-change', 'bench-press-change',
-         '3RM-squat-change']]
+         '3RM-squat-change', 'Age', 'Gender']]
     grouped_sample_metadata['subject-id-period'] = \
          ['-'.join(map(str,e)) \
               for e in zip(grouped_sample_metadata['subject-id'],
@@ -178,7 +174,8 @@ def ols_and_anova(dep_variable, project, time_value, base_output_dir, time_colum
                   sample_metadata, uu_dm, wu_dm, faith_pd, shannon, evenness):
     indep_variables = ['faith_pd', 'shannon', 'pielou_e',
                        'Weighted_UniFrac_PC1', 'Weighted_UniFrac_PC2', 'Weighted_UniFrac_PC3',
-                       'Unweighted_UniFrac_PC1', 'Unweighted_UniFrac_PC2', 'Unweighted_UniFrac_PC3']
+                       'Unweighted_UniFrac_PC1', 'Unweighted_UniFrac_PC2', 'Unweighted_UniFrac_PC3',
+                       'Gender', 'Age']
     output_dir = os.path.join(base_output_dir, '%s-%s-%s%s' % (project, dep_variable, time_column, str(time_value)))
     Path(output_dir).mkdir(parents=True, exist_ok=True)
 
@@ -189,6 +186,7 @@ def ols_and_anova(dep_variable, project, time_value, base_output_dir, time_colum
 
     # make column names compatible for R-like forumulas used in anova
     _df = sample_metadata.to_dataframe()
+
     _df.index.name = 'sample-id'
     _df = _df.rename(columns={'VO2max-change': 'VO2max_change',
                               'RER-change': 'RER_change',
@@ -196,14 +194,19 @@ def ols_and_anova(dep_variable, project, time_value, base_output_dir, time_colum
                               'bench-press-change': 'bench_press_change',
                               '3RM-squat-change': 'three_rep_max_squat_change'})
 
-    # drop columns that don't have necessary data
+    # recode gender as numeric values for OLS
+    gender_codes = {'f': 1, 'm': 0, np.nan: np.nan}
+    _df['Gender'] = [gender_codes[e] for e in _df['Gender']]
+
+    # drop columns that won't be used and rows that have na in columns that will be used
     if project == 'exmp1':
-        _df = _df[['VO2max_change', 'RER_change']].dropna().astype(np.float)
+        _df = _df[['VO2max_change', 'RER_change', 'Gender', 'Age']].dropna().astype(np.float)
     elif project == 'exmp2':
-        _df = _df[['row_change', 'bench_press_change', 'three_rep_max_squat_change']].dropna().astype(np.float)
+        _df = _df[['row_change', 'bench_press_change', 'three_rep_max_squat_change', 'Gender', 'Age']].dropna().astype(np.float)
     else:
         raise ValueError("Project must be exmp1 or exmp2, but %s was provided." % project)
     sample_metadata = qiime2.Metadata(_df)
+
 
     uu_dm = filter_distance_matrix(uu_dm, metadata=sample_metadata).filtered_distance_matrix
     wu_dm = filter_distance_matrix(wu_dm, metadata=sample_metadata).filtered_distance_matrix
