@@ -1,0 +1,9 @@
+,project,distance,performance metric,Spearman rho,Spearman p-value,sample size,Spearman q-value
+0,exmp1,unweighted UniFrac distance (week 1 to 5.0),RER-change,0.2236481232785243,0.2621184721247376,27,0.7035533455917169
+1,exmp1,unweighted UniFrac distance (week 1 to 5.0),VO2max-change,0.384004884004884,0.04798599586507394,27,0.32524409287635025
+2,exmp1,weighted UniFrac distance (week 1 to 5.0),RER-change,0.0226092365062989,0.9108741460226601,27,0.9638420029883815
+3,exmp1,weighted UniFrac distance (week 1 to 5.0),VO2max-change,0.3577533577533577,0.06692841460810858,27,0.33288298708821207
+4,exmp1,Bray-Curtis distance (week 1 to 5.0),RER-change,0.14115496305283906,0.482501569478324,27,0.861411526569489
+5,exmp1,Bray-Curtis distance (week 1 to 5.0),VO2max-change,0.36996336996337,0.057506101054724625,27,0.33288298708821207
+6,exmp1,Jaccard distance (week 1 to 5.0),RER-change,0.04857930546623683,0.8098474375360183,27,0.9638420029883815
+7,exmp1,Jaccard distance (week 1 to 5.0),VO2max-change,0.3717948717948718,0.056186897129876935,27,0.33288298708821207
