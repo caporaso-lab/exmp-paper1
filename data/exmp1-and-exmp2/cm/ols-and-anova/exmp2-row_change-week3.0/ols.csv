@@ -2,8 +2,8 @@
 Dep. Variable:   ,row_change      ,  R-squared:         ,   0.894
 Model:           ,OLS             ,  Adj. R-squared:    ,   0.508
 Method:          ,Least Squares   ,  F-statistic:       ,   2.312
-Date:            ,Thu, 23 Apr 2020,  Prob (F-statistic):, 0.266  
-Time:            ,09:18:08        ,  Log-Likelihood:    , -33.112
+Date:            ,Mon, 27 Apr 2020,  Prob (F-statistic):, 0.266  
+Time:            ,15:30:50        ,  Log-Likelihood:    , -33.112
 No. Observations:,    15          ,  AIC:               ,   90.22
 Df Residuals:    ,     3          ,  BIC:               ,   98.72
 Df Model:        ,    11          ,                     ,        
@@ -15,12 +15,12 @@ shannon               ,    7.2719,   44.168,    0.165, 0.880, -133.290,  147.833
 pielou_e              ,  -69.3820,  338.794,   -0.205, 0.851,-1147.577, 1008.813
 Weighted_UniFrac_PC1  ,    2.4051,   17.978,    0.134, 0.902,  -54.809,   59.619
 Weighted_UniFrac_PC2  ,   14.0499,   19.794,    0.710, 0.529,  -48.942,   77.042
-Weighted_UniFrac_PC3  ,   12.8672,   22.484,    0.572, 0.607,  -58.687,   84.421
-Unweighted_UniFrac_PC1,  -24.5288,   23.205,   -1.057, 0.368,  -98.379,   49.321
-Unweighted_UniFrac_PC2,   -2.1371,   25.862,   -0.083, 0.939,  -84.441,   80.166
-Unweighted_UniFrac_PC3,   11.8252,   38.980,    0.303, 0.781, -112.228,  135.878
-Gender                ,   -8.2620,    4.677,   -1.767, 0.175,  -23.146,    6.622
+Weighted_UniFrac_PC3  ,  -12.8672,   22.484,   -0.572, 0.607,  -84.421,   58.687
+Unweighted_UniFrac_PC1,   24.5288,   23.205,    1.057, 0.368,  -49.321,   98.379
+Unweighted_UniFrac_PC2,    2.1371,   25.862,    0.083, 0.939,  -80.166,   84.441
+Unweighted_UniFrac_PC3,  -11.8252,   38.980,   -0.303, 0.781, -135.878,  112.228
 Age                   ,    0.9854,    0.594,    1.660, 0.195,   -0.903,    2.874
+Gender                ,   -8.2620,    4.677,   -1.767, 0.175,  -23.146,    6.622
 Omnibus:      , 0.930,  Durbin-Watson:     ,   2.296
 Prob(Omnibus):, 0.628,  Jarque-Bera (JB):  ,   0.687
 Skew:         ,-0.003,  Prob(JB):          ,   0.709

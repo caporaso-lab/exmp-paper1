@@ -2,8 +2,8 @@
 Dep. Variable:   ,three_rep_max_squat_change,  R-squared:         ,   0.874
 Model:           ,OLS                       ,  Adj. R-squared:    ,   0.412
 Method:          ,Least Squares             ,  F-statistic:       ,   1.893
-Date:            ,Thu, 23 Apr 2020          ,  Prob (F-statistic):, 0.328  
-Time:            ,09:18:30                  ,  Log-Likelihood:    , -46.601
+Date:            ,Mon, 27 Apr 2020          ,  Prob (F-statistic):, 0.328  
+Time:            ,15:31:21                  ,  Log-Likelihood:    , -46.601
 No. Observations:,    15                    ,  AIC:               ,   117.2
 Df Residuals:    ,     3                    ,  BIC:               ,   125.7
 Df Model:        ,    11                    ,                     ,        
@@ -15,12 +15,12 @@ shannon               , -139.7458,  108.556,   -1.287, 0.288, -485.219,  205.728
 pielou_e              , 1090.0832,  832.693,    1.309, 0.282,-1559.916, 3740.082
 Weighted_UniFrac_PC1  ,   62.7878,   44.187,    1.421, 0.250,  -77.834,  203.409
 Weighted_UniFrac_PC2  ,   28.0367,   48.649,    0.576, 0.605, -126.786,  182.860
-Weighted_UniFrac_PC3  ,   17.9135,   55.261,    0.324, 0.767, -157.952,  193.779
-Unweighted_UniFrac_PC1,  -92.2486,   57.035,   -1.617, 0.204, -273.758,   89.261
-Unweighted_UniFrac_PC2,  -74.9708,   63.563,   -1.179, 0.323, -277.257,  127.316
-Unweighted_UniFrac_PC3,  134.3792,   95.806,    1.403, 0.255, -170.519,  439.278
-Gender                ,  -17.3091,   11.495,   -1.506, 0.229,  -53.890,   19.272
+Weighted_UniFrac_PC3  ,  -17.9135,   55.261,   -0.324, 0.767, -193.779,  157.952
+Unweighted_UniFrac_PC1,   92.2486,   57.035,    1.617, 0.204,  -89.261,  273.758
+Unweighted_UniFrac_PC2,   74.9708,   63.563,    1.179, 0.323, -127.316,  277.257
+Unweighted_UniFrac_PC3, -134.3792,   95.806,   -1.403, 0.255, -439.278,  170.519
 Age                   ,    2.5885,    1.459,    1.774, 0.174,   -2.054,    7.231
+Gender                ,  -17.3091,   11.495,   -1.506, 0.229,  -53.890,   19.272
 Omnibus:      , 0.489,  Durbin-Watson:     ,   1.630
 Prob(Omnibus):, 0.783,  Jarque-Bera (JB):  ,   0.570
 Skew:         , 0.237,  Prob(JB):          ,   0.752
