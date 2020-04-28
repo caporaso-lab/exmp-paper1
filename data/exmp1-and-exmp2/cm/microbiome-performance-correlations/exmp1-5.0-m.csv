@@ -1,0 +1,9 @@
+,project,distance,performance metric,Kendall tau,p-value,sample size,q-value
+0,exmp1,unweighted UniFrac distance (week 1 to 5.0),RER-change,-0.33333333333333337,0.3813492063492063,7,0.9439373727112405
+1,exmp1,unweighted UniFrac distance (week 1 to 5.0),VO2max-change,0.4285714285714286,0.2388888888888889,7,0.8873880454364338
+2,exmp1,weighted UniFrac distance (week 1 to 5.0),RER-change,-0.23809523809523814,0.5619047619047619,7,0.9838622618980285
+3,exmp1,weighted UniFrac distance (week 1 to 5.0),VO2max-change,0.14285714285714288,0.7726190476190476,7,0.9882439278290681
+4,exmp1,Bray-Curtis distance (week 1 to 5.0),RER-change,-0.23809523809523814,0.5619047619047619,7,0.9838622618980285
+5,exmp1,Bray-Curtis distance (week 1 to 5.0),VO2max-change,0.14285714285714288,0.7726190476190476,7,0.9882439278290681
+6,exmp1,Jaccard distance (week 1 to 5.0),RER-change,-0.4285714285714286,0.2388888888888889,7,0.8873880454364338
+7,exmp1,Jaccard distance (week 1 to 5.0),VO2max-change,0.14285714285714288,0.7726190476190476,7,0.9882439278290681

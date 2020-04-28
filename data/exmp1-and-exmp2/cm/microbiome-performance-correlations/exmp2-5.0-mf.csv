@@ -1,0 +1,13 @@
+,project,distance,performance metric,Kendall tau,p-value,sample size,q-value
+0,exmp2,unweighted UniFrac distance (week 1 to 5.0),bench-press-change,0.15275252316519466,0.4626609439374403,15,0.9935707643852688
+1,exmp2,unweighted UniFrac distance (week 1 to 5.0),row-change,-0.04069784637782399,0.839217102880701,15,0.9995849694094341
+2,exmp2,unweighted UniFrac distance (week 1 to 5.0),3RM-squat-change,0.049040823861374976,0.8029888996343987,15,0.9995849694094341
+3,exmp2,weighted UniFrac distance (week 1 to 5.0),bench-press-change,0.06546536707079771,0.7529333773086164,15,0.9995849694094341
+4,exmp2,weighted UniFrac distance (week 1 to 5.0),row-change,0.20348923188911994,0.3103561540768326,15,0.9848530547454465
+5,exmp2,weighted UniFrac distance (week 1 to 5.0),3RM-squat-change,0.2059714602177749,0.29472186299159997,15,0.9848530547454465
+6,exmp2,Bray-Curtis distance (week 1 to 5.0),bench-press-change,0.1745743121887939,0.40124662279565415,15,0.9935707643852688
+7,exmp2,Bray-Curtis distance (week 1 to 5.0),row-change,0.061046769566735985,0.7608669701568815,15,0.9995849694094341
+8,exmp2,Bray-Curtis distance (week 1 to 5.0),3RM-squat-change,0.16673880112867492,0.39630728625035927,15,0.9935707643852688
+9,exmp2,Jaccard distance (week 1 to 5.0),bench-press-change,0.1091089451179962,0.5998452511330457,15,0.9983571578875565
+10,exmp2,Jaccard distance (week 1 to 5.0),row-change,0.0,1.0,15,1.0
+11,exmp2,Jaccard distance (week 1 to 5.0),3RM-squat-change,0.06865715340592497,0.726884288343037,15,0.9995849694094341
